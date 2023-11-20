@@ -11,7 +11,7 @@ import SwiftUI
 struct cleanmateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CleaningView()
         }
     }
 }

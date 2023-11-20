@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18181912B0B261A00B304A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181902B0B261A00B304A6 /* ViewController.swift */; };
+		B18181922B0B261A00B304A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181902B0B261A00B304A6 /* ViewController.swift */; };
+		B18181932B0B261A00B304A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181902B0B261A00B304A6 /* ViewController.swift */; };
+		B18181952B0B270D00B304A6 /* CleaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181942B0B270D00B304A6 /* CleaningView.swift */; };
+		B18181962B0B270D00B304A6 /* CleaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181942B0B270D00B304A6 /* CleaningView.swift */; };
+		B18181972B0B270D00B304A6 /* CleaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181942B0B270D00B304A6 /* CleaningView.swift */; };
 		B1BA8ADC2B01E9D10051DE13 /* cleanmateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8ADB2B01E9D10051DE13 /* cleanmateApp.swift */; };
 		B1BA8ADE2B01E9D10051DE13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8ADD2B01E9D10051DE13 /* ContentView.swift */; };
 		B1BA8AE02B01E9D20051DE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BA8ADF2B01E9D20051DE13 /* Assets.xcassets */; };
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B18181902B0B261A00B304A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B18181942B0B270D00B304A6 /* CleaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningView.swift; sourceTree = "<group>"; };
 		B1BA8AD82B01E9D10051DE13 /* cleanmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cleanmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BA8ADB2B01E9D10051DE13 /* cleanmateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleanmateApp.swift; sourceTree = "<group>"; };
 		B1BA8ADD2B01E9D10051DE13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +106,8 @@
 				B1BA8ADD2B01E9D10051DE13 /* ContentView.swift */,
 				B1BA8ADF2B01E9D20051DE13 /* Assets.xcassets */,
 				B1BA8AE12B01E9D20051DE13 /* Preview Content */,
+				B18181902B0B261A00B304A6 /* ViewController.swift */,
+				B18181942B0B270D00B304A6 /* CleaningView.swift */,
 			);
 			path = cleanmate;
 			sourceTree = "<group>";
@@ -257,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18181952B0B270D00B304A6 /* CleaningView.swift in Sources */,
+				B18181912B0B261A00B304A6 /* ViewController.swift in Sources */,
 				B1BA8ADE2B01E9D10051DE13 /* ContentView.swift in Sources */,
 				B1BA8ADC2B01E9D10051DE13 /* cleanmateApp.swift in Sources */,
 			);
@@ -266,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18181962B0B270D00B304A6 /* CleaningView.swift in Sources */,
+				B18181922B0B261A00B304A6 /* ViewController.swift in Sources */,
 				B1BA8AED2B01E9D20051DE13 /* cleanmateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18181972B0B270D00B304A6 /* CleaningView.swift in Sources */,
+				B18181932B0B261A00B304A6 /* ViewController.swift in Sources */,
 				B1BA8AF72B01E9D20051DE13 /* cleanmateUITests.swift in Sources */,
 				B1BA8AF92B01E9D20051DE13 /* cleanmateUITestsLaunchTests.swift in Sources */,
 			);
