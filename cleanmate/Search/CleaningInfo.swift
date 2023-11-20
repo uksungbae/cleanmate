@@ -32,7 +32,7 @@ struct CleaningInfo: Identifiable {
 }
 
 let cleaningInfoData = [
-    CleaningInfo(title: "bathroom", description: "욕실을 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=ig6NU9oyb54"),
+    CleaningInfo(title: "bathroom", description: "욕실 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=ig6NU9oyb54"),
     CleaningInfo(title: "kitchen", description: "부엌을 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=your_youtube_video_id"),
     // 나머지 청소 정보들...
 ]
