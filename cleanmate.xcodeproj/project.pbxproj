@@ -14,12 +14,13 @@
 		B18181962B0B270D00B304A6 /* CleaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181942B0B270D00B304A6 /* CleaningView.swift */; };
 		B18181972B0B270D00B304A6 /* CleaningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181942B0B270D00B304A6 /* CleaningView.swift */; };
 		B1BA8ADC2B01E9D10051DE13 /* cleanmateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8ADB2B01E9D10051DE13 /* cleanmateApp.swift */; };
-		B1BA8ADE2B01E9D10051DE13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8ADD2B01E9D10051DE13 /* ContentView.swift */; };
 		B1BA8AE02B01E9D20051DE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BA8ADF2B01E9D20051DE13 /* Assets.xcassets */; };
 		B1BA8AE32B01E9D20051DE13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BA8AE22B01E9D20051DE13 /* Preview Assets.xcassets */; };
 		B1BA8AED2B01E9D20051DE13 /* cleanmateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8AEC2B01E9D20051DE13 /* cleanmateTests.swift */; };
 		B1BA8AF72B01E9D20051DE13 /* cleanmateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8AF62B01E9D20051DE13 /* cleanmateUITests.swift */; };
 		B1BA8AF92B01E9D20051DE13 /* cleanmateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BA8AF82B01E9D20051DE13 /* cleanmateUITestsLaunchTests.swift */; };
+		B1D299102B0B33AF00CDB20E /* CleaningInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D2990F2B0B33AF00CDB20E /* CleaningInfo.swift */; };
+		B1D299122B0B33D700CDB20E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D299112B0B33D700CDB20E /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		B18181942B0B270D00B304A6 /* CleaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningView.swift; sourceTree = "<group>"; };
 		B1BA8AD82B01E9D10051DE13 /* cleanmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cleanmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BA8ADB2B01E9D10051DE13 /* cleanmateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleanmateApp.swift; sourceTree = "<group>"; };
-		B1BA8ADD2B01E9D10051DE13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1BA8ADF2B01E9D20051DE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1BA8AE22B01E9D20051DE13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1BA8AE82B01E9D20051DE13 /* cleanmateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cleanmateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +52,8 @@
 		B1BA8AF22B01E9D20051DE13 /* cleanmateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cleanmateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BA8AF62B01E9D20051DE13 /* cleanmateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleanmateUITests.swift; sourceTree = "<group>"; };
 		B1BA8AF82B01E9D20051DE13 /* cleanmateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleanmateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1D2990F2B0B33AF00CDB20E /* CleaningInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningInfo.swift; sourceTree = "<group>"; };
+		B1D299112B0B33D700CDB20E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +104,11 @@
 		B1BA8ADA2B01E9D10051DE13 /* cleanmate */ = {
 			isa = PBXGroup;
 			children = (
+				B1D2990E2B0B337300CDB20E /* Search */,
 				B1BA8ADB2B01E9D10051DE13 /* cleanmateApp.swift */,
-				B1BA8ADD2B01E9D10051DE13 /* ContentView.swift */,
 				B1BA8ADF2B01E9D20051DE13 /* Assets.xcassets */,
 				B1BA8AE12B01E9D20051DE13 /* Preview Content */,
-				B18181902B0B261A00B304A6 /* ViewController.swift */,
-				B18181942B0B270D00B304A6 /* CleaningView.swift */,
+				B1D2990D2B0B328C00CDB20E /* GraphView */,
 			);
 			path = cleanmate;
 			sourceTree = "<group>";
@@ -135,6 +136,24 @@
 				B1BA8AF82B01E9D20051DE13 /* cleanmateUITestsLaunchTests.swift */,
 			);
 			path = cleanmateUITests;
+			sourceTree = "<group>";
+		};
+		B1D2990D2B0B328C00CDB20E /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				B18181942B0B270D00B304A6 /* CleaningView.swift */,
+				B18181902B0B261A00B304A6 /* ViewController.swift */,
+			);
+			path = GraphView;
+			sourceTree = "<group>";
+		};
+		B1D2990E2B0B337300CDB20E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B1D2990F2B0B33AF00CDB20E /* CleaningInfo.swift */,
+				B1D299112B0B33D700CDB20E /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D299122B0B33D700CDB20E /* SearchView.swift in Sources */,
 				B18181952B0B270D00B304A6 /* CleaningView.swift in Sources */,
 				B18181912B0B261A00B304A6 /* ViewController.swift in Sources */,
-				B1BA8ADE2B01E9D10051DE13 /* ContentView.swift in Sources */,
+				B1D299102B0B33AF00CDB20E /* CleaningInfo.swift in Sources */,
 				B1BA8ADC2B01E9D10051DE13 /* cleanmateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
