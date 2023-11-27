@@ -29,11 +29,13 @@ struct CleaningInfo: Identifiable {
     let title: String
     let description: String
     let youtubeLink: String? // 유튜브 링크 추가
+    let category: String // 카테고리를 위한 새로운 속성
+
 }
 
 let cleaningInfoData = [
-    CleaningInfo(title: "bathroom", description: "욕실 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=ig6NU9oyb54"),
-    CleaningInfo(title: "kitchen", description: "부엌을 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=your_youtube_video_id"),
+    CleaningInfo(title: "bathroom", description: "욕실 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=ig6NU9oyb54", category: "bathroom"),
+    CleaningInfo(title: "kitchen", description: "부엌을 청소하는 방법과 팁", youtubeLink: "https://www.youtube.com/watch?v=your_youtube_video_id", category: "kitchen"),
     // 나머지 청소 정보들...
 ]
 
@@ -92,5 +94,5 @@ struct Search: View {
     }
 }
 
-// 나머지 부분은 이전과 동일합니다.
+
 
