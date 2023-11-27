@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B101E5742B145D04007B7F5A /* cleanmateServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101E5732B145D04007B7F5A /* cleanmateServer.swift */; };
 		B18181912B0B261A00B304A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181902B0B261A00B304A6 /* ViewController.swift */; };
 		B18181922B0B261A00B304A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181902B0B261A00B304A6 /* ViewController.swift */; };
 		B18181932B0B261A00B304A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18181902B0B261A00B304A6 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B101E5732B145D04007B7F5A /* cleanmateServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleanmateServer.swift; sourceTree = "<group>"; };
 		B18181902B0B261A00B304A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B18181942B0B270D00B304A6 /* CleaningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningView.swift; sourceTree = "<group>"; };
 		B1BA8AD82B01E9D10051DE13 /* cleanmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cleanmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				B1BA8ADF2B01E9D20051DE13 /* Assets.xcassets */,
 				B1BA8AE12B01E9D20051DE13 /* Preview Content */,
 				B1D2990D2B0B328C00CDB20E /* GraphView */,
+				B101E5732B145D04007B7F5A /* cleanmateServer.swift */,
 			);
 			path = cleanmate;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D299122B0B33D700CDB20E /* SearchView.swift in Sources */,
+				B101E5742B145D04007B7F5A /* cleanmateServer.swift in Sources */,
 				B18181952B0B270D00B304A6 /* CleaningView.swift in Sources */,
 				B18181912B0B261A00B304A6 /* ViewController.swift in Sources */,
 				B1D299102B0B33AF00CDB20E /* CleaningInfo.swift in Sources */,
