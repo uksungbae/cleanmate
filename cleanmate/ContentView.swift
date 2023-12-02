@@ -7,15 +7,50 @@
 
 import SwiftUI
 
+
+//struct ContentView: View {
+//    var body: some View {
+//        VStack {
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
+//            Text("Hello, world!")
+//        }
+//        .padding()
+//    }
+//}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            ChallengeTabView()
+                .tabItem {
+                    Image(systemName: "chart.pie")
+                    Text("챌린지")
+                }
+            CalendarTabView()
+                .tabItem {
+                    Label("캘린더", systemImage: "calendar")
+                }
+            
+            SearchTabView()
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("검색")
+                }
+            
+            MateTabView()
+                .tabItem {
+                    Image(systemName: "person.2.fill")
+                    Text("친구맺기")
+                }
+            
+            MypageTabView()
+                .tabItem {
+                    Image(systemName: "book.pages.fill")
+                    Text("마이페이지")
+                }
         }
-        .padding()
     }
 }
 
