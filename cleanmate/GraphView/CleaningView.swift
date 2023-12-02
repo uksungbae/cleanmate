@@ -1,3 +1,5 @@
+// CleaningView.swift
+
 import SwiftUI
 
 struct CleaningView: View {
@@ -28,6 +30,15 @@ struct CleaningView: View {
                         }
                     }
                 }
+
+                // 추가한 부분: 완료 버튼
+                Button("완료") {
+                    self.completeCleaning()
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
             }
             .navigationTitle("CleanMate")
         }
@@ -40,15 +51,43 @@ struct CleaningView: View {
             completedCategories.insert(category)
         }
     }
-}
 
-struct CleaningView_Previews: PreviewProvider {
-    static var previews: some View {
-        CleaningView()
+    // 추가한 부분: 서버로 데이터 전송
+    private func completeCleaning() {
+        let serverURL = URL(string: "http://localhost:3000/completeCleaning")!
+
+        let requestData: [String: Any] = ["completedCategories": Array(completedCategories)]
+
+        var request = URLRequest(url: serverURL)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: requestData)
+        } catch {
+            print("Error serializing JSON:", error)
+            return
+        }
+
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            // 서버 응답 처리
+            if let error = error {
+                print("Error sending data to server:", error)
+            } else if let data = data {
+                do {
+                    let jsonResponse = try JSONSerialization.jsonObject(with: data, options: [])
+                    print("Server response:", jsonResponse)
+                } catch {
+                    print("Error parsing server response:", error)
+                }
+            }
+        }
+
+        task.resume()
     }
 }
 
-// PieChart 뷰
+// 추가한 부분: PieChart 뷰
 struct PieChart: View {
     var data: Int
 
@@ -65,5 +104,12 @@ struct PieChart: View {
                 .stroke(Color.gray, lineWidth: 30)
         }
         .rotationEffect(.degrees(-90)) // 12시 방향에서 시작되도록 회전
+    }
+}
+
+// 추가한 부분: CleaningView 미리보기
+struct CleaningView_Previews: PreviewProvider {
+    static var previews: some View {
+        CleaningView()
     }
 }
